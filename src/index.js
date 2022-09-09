@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM  from "react-dom";
+import ReactDOM  from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import { 
@@ -55,7 +55,7 @@ const App= () => {
                 <header id='main-header'>
                 {/* <img ""></img> */}
                 </header>
-                <navbar className="navbar">
+                <nav className="navbar">
                     <Link className="nav-link" to="/">Home</Link>
                     <Link className="nav-link" to="/posts">Posts</Link>
                     { isLoggedIn ? <Link className="nav-link" to="/profile/">Profile</Link> : null}
@@ -79,7 +79,7 @@ const App= () => {
                     }
                 
                     
-                </navbar>
+                </nav>
                 
                 <Routes>
                     <Route path="/" 
@@ -151,6 +151,7 @@ const App= () => {
     )
 }
 
-const appElement = document.getElementById('app');
+const appElement = document.getElementById('root');
 const root = ReactDOM.createRoot(appElement);
 root.render(<App />)
+
