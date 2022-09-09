@@ -1,0 +1,304 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(152, 210, 230);
+}
+
+.app {
+    align-items: center;
+}
+
+
+/* ************************** NAV BAR ************************** */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4px;
+    font-size: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+.nav-link:hover {
+    text-decoration: black underline wavy;
+}
+
+#main-header {
+    background-color: black;
+    text-align: center;
+}
+
+.homepage-container {
+    text-align: center;
+}
+
+/* ************************** LOG IN ************************** */
+
+#log-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 55px;
+}
+
+#log-in-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(93, 106, 119);
+    padding: 20px;
+    width: 550px;
+    height: 200px;
+}
+#log-in-box * {
+    background-color: white;
+}
+#log-in-form * {
+    padding: 8px;
+    margin: 5px;
+    background-color: rgb(152, 210, 230);
+    font-weight: bold;
+    border: 1.5px black solid;
+}
+
+/* ************************** REGISTRATION ************************** */
+
+#register-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+
+#register-form * {
+    align-items: center;
+    background-color: white;
+    padding: 8px;
+    margin: 5px;
+    font-weight: bold;
+}
+#register-form input {
+    background-color: rgb(152, 210, 230);
+    border: 1.5px solid black;
+}
+.register-message {
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(105, 105, 105);
+}
+
+
+/* ************************** PROFILE ************************** */
+
+#welcome{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(105, 105, 105);
+    font-weight: bolder;
+
+}
+
+
+
+#my-messages-container {
+    background-color: rgb(220, 224, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    margin: 0px;
+}
+#my-messages-container * {
+    background-color: white;
+}
+#messages-title {
+    background-color: rgb(220, 224, 224);
+}
+.message-label {
+    text-shadow: 0.5px 0.5px black;
+}
+.message {
+    font-family: cursive; ;
+}
+
+.each-post-section {
+    box-shadow: 2px 2px 10px slategrey;
+    background-color: white;
+    margin: 5px;
+    width: 550px;
+    padding: 10px;
+}
+
+.each-post-section * {
+    background-color: white;
+}
+
+.my-posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#post-id {
+    color: lightgray;
+    font-size: 10px;
+    text-align: right;
+}
+.post-label {
+    text-shadow: 0.5px 0.5px black;
+}
+#edit-post-link {
+    text-align: right;
+}
+#deleted-post {
+    color: lightgray;
+}
+.delete-post {
+    background-color: lightblue;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+
+/* ****************** EDIT POST **************************** */
+
+#edit-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+#edit-post-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    box-shadow: 2px 2px 10px slategrey;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+#edit-post-form input {
+
+    margin: 5px;
+    border: 2px solid black;
+    height: 30px;
+    width: 400px;
+}
+#delivery-label {
+    background-color: white;
+}
+
+/* ******************  POSTS **************************** */
+
+#add-post-link {
+    background-color: white;
+    border: 3px black solid;
+    text-decoration: none;
+    color: rgb(162, 202, 216);
+    padding: 10px;
+    text-shadow: 1px 1px rgb(162, 202, 216);
+    font-size: 25px;
+    border-radius: 5%;
+    margin: 8px;
+}
+
+#posts-container {
+    background-color: rgb(162, 202, 216);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#search-words {
+    border: 1px solid black;
+    height: 20px;
+    width: 200px;
+    background-color: lightcyan;
+    
+}
+.message-button {
+    background-color: rgb(162, 202, 216);
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+/* ******************  ADD MESSAGE **************************** */
+
+#message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#add-message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#message-box {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    background-color: rgb(162, 202, 216);
+    font-family: cursive;
+    font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px slategrey;
+}
+#submit-message {
+    background-color: white;
+    border: 2px solid black;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#submit-message:hover {
+    box-shadow: .5px .5px 10px white;
+}
+
+/* ******************  ADD POST **************************** */
+
+.add-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+#add-post-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: white;
+    box-shadow: 2px 2px 10px slategrey;
+    padding: 20px;
+}
+#add-post-form * {
+    background-color: white;
+    height: 30px;
+    padding-top: 10px;
+}
+#add-post-form input {
+    font-size: 15px;
+}
+#add-post-button {
+    width: 200px;
+    height: 50px;
+    background-color: lightblue;
+}
+#add-post-button:hover {
+    box-shadow: 2px 2px 10px lightgray;
+}
